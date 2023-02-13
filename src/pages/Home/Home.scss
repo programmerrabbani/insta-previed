@@ -1,0 +1,184 @@
+.body_content {
+  background-color: #e9e9e9;
+  min-height: 100vh;
+  .story_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    .story_items {
+      width: 100px;
+      height: 70px;
+      border-radius: 50%;
+      position: relative;
+      background-position: center;
+      background-size: cover;
+      border: 5px solid #f7f7f7;
+      cursor: pointer;
+
+      &:nth-child(1) {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaXaKH9Q7gVGHSc2_IK3mOhpEaiULsMGxwRUe2nL4b&s");
+      }
+      &:nth-child(2) {
+        background-image: url("https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bWFsZSUyMHByb2ZpbGV8ZW58MHx8MHx8&w=1000&q=80");
+      }
+      &:nth-child(3) {
+        background-image: url("https://img.freepik.com/free-photo/close-up-portrait-handsome-stylish-young-man-standing-profile-turn-head-with-beaming-smile-express-satisfaction-enthusiasm-standing-white-wall-pleased_176420-33957.jpg?w=2000");
+      }
+      &:nth-child(4) {
+        background-image: url("https://previews.123rf.com/images/vgstudio/vgstudio1006/vgstudio100600027/7268969-portrait-of-happy-smiling-man-isolated-on-white.jpg");
+      }
+      &:nth-child(5) {
+        background-image: url("https://previews.123rf.com/images/stylephotographs/stylephotographs1301/stylephotographs130100017/17104891-headshot-of-a-young-happy-smiling-man.jpg");
+      }
+      &:nth-child(6) {
+        background-image: url("https://previews.123rf.com/images/rido/rido1405/rido140500028/28227494-portrait-of-young-handsome-man-smiling-outdoor.jpg");
+      }
+      &:nth-child(7) {
+        background-image: url("https://media.istockphoto.com/id/471818943/photo/what-a-handsome-smile.jpg?s=170667a&w=0&k=20&c=qLq7FBj3KEWmvBCEPuDZRZOU_jS38j88zH04BN6HqTs=");
+      }
+
+      p {
+        display: flex;
+        margin-bottom: 0;
+        font-size: 13px;
+        font-weight: 200;
+        color: #333;
+        position: absolute;
+        bottom: -27px;
+        left: 6px;
+      }
+    }
+  }
+
+  .timeLine {
+    .post_aught {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .user_info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+        }
+
+        .user_details {
+          span {
+            margin-left: 10px;
+            font-size: 16px;
+            font-weight: 500;
+          }
+        }
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+
+        .dropbtn {
+          background-color: transparent;
+          border: none;
+        }
+
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f1f1f1;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          z-index: 1;
+        }
+
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+
+        .dropdown-content a:hover {
+          background-color: #ddd;
+        }
+
+        &:hover .dropdown-content {
+          display: block;
+        }
+      }
+    }
+
+    .post_footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0;
+      .post_icon {
+        ul {
+          display: flex;
+          gap: 10px;
+          li {
+            a {
+              font-size: 25px;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+
+      .post_middle {
+        font-size: 25px;
+        margin-left: -80px;
+        font-weight: 700;
+      }
+
+      .post_last {
+        a {
+          color: #333;
+          font-size: 25px;
+          font-weight: 700;
+        }
+      }
+    }
+
+    .likes {
+      h1 {
+        font-size: 15px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.right_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .user_text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+
+    .user_name {
+      span {
+        margin-left: 20px;
+      }
+
+      .name2 {
+        color: #8e8e8e;
+      }
+    }
+  }
+}

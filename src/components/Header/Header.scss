@@ -1,0 +1,43 @@
+.side_bar {
+  width: 250px;
+  padding: 0px 20px;
+  position: fixed;
+  border-right: 2px solid #ddd;
+  z-index: 9;
+  .logo h4 {
+    font-size: 30px;
+  }
+  .insta_menu {
+    ul {
+      width: 100%;
+      li {
+        margin-bottom: 20px;
+        border-radius: 20px;
+        padding: 0px 10px;
+        width: 180px;
+        &:hover {
+          background-color: #fafafa;
+        }
+        a {
+          display: flex;
+          align-items: center;
+
+          .icon {
+            margin-right: 10px;
+            font-size: 25px;
+          }
+
+          .content {
+            font-size: 18px;
+            font-weight: 200;
+            margin-top: 8px;
+          }
+
+          &:hover {
+            color: #333;
+          }
+        }
+      }
+    }
+  }
+}
